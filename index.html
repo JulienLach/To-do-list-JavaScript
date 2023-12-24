@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exercice To Do Liste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <h1>To Do List</h1>
+      <div class="todo-inputs">
+        <label for="item">Entrer une nouvelle tâche :</label>
+        <input type="text" name="item" id="item">
+        <label for="priorite">Priotité : </label>
+        <select name="priorite" id="priorite">
+          <option value="basse">Basse 🟢</option>
+          <option value="moyenne">Moyenne 🟠</option>
+          <option value="haute">Haute 🔴</option>
+        </select>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date">
+        <button onclick="addToList()">Ajouter à la liste</button>
+        <!-- <button id="sortButton">Trier par dates</button> -->
+      </div>
+
+      <ul id="ulListe">
+
+      </ul>
+    </div>
+  </section>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
